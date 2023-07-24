@@ -55,17 +55,23 @@ namespace new_calculator
             this.mainDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mainDisplay.Location = new System.Drawing.Point(34, 81);
             this.mainDisplay.Name = "mainDisplay";
+            this.mainDisplay.ReadOnly = true;
             this.mainDisplay.Size = new System.Drawing.Size(311, 38);
             this.mainDisplay.TabIndex = 0;
             this.mainDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // tmpDisplay
             // 
+            this.tmpDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tmpDisplay.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tmpDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tmpDisplay.Location = new System.Drawing.Point(34, 27);
             this.tmpDisplay.Name = "tmpDisplay";
-            this.tmpDisplay.Size = new System.Drawing.Size(311, 29);
+            this.tmpDisplay.ReadOnly = true;
+            this.tmpDisplay.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.tmpDisplay.Size = new System.Drawing.Size(311, 22);
             this.tmpDisplay.TabIndex = 1;
+            this.tmpDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // btn7
             // 
