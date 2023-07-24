@@ -29,7 +29,7 @@ namespace new_calculator
 
         private void Calculator_Load(object sender, EventArgs e)
         {
-            mainDisplay.Text = "0";
+            mainDisplay.Text = "1";
         }
     }
 }
