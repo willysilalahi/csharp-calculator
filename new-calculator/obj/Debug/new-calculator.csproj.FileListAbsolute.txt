@@ -8,3 +8,13 @@ D:\C#\new-calculator\new-calculator\obj\Debug\new-calculator.csproj.CoreCompileI
 D:\C#\new-calculator\new-calculator\obj\Debug\new-calculator.exe
 D:\C#\new-calculator\new-calculator\obj\Debug\new-calculator.pdb
 D:\C#\new-calculator\new-calculator\obj\Debug\new_calculator.Calculator.resources
+D:\C#\csharp-calculator\new-calculator\bin\Debug\new-calculator.exe.config
+D:\C#\csharp-calculator\new-calculator\bin\Debug\new-calculator.exe
+D:\C#\csharp-calculator\new-calculator\bin\Debug\new-calculator.pdb
+D:\C#\csharp-calculator\new-calculator\obj\Debug\new-calculator.csproj.AssemblyReference.cache
+D:\C#\csharp-calculator\new-calculator\obj\Debug\new_calculator.Calculator.resources
+D:\C#\csharp-calculator\new-calculator\obj\Debug\new_calculator.Properties.Resources.resources
+D:\C#\csharp-calculator\new-calculator\obj\Debug\new-calculator.csproj.GenerateResource.cache
+D:\C#\csharp-calculator\new-calculator\obj\Debug\new-calculator.csproj.CoreCompileInputs.cache
+D:\C#\csharp-calculator\new-calculator\obj\Debug\new-calculator.exe
+D:\C#\csharp-calculator\new-calculator\obj\Debug\new-calculator.pdb

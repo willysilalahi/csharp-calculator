@@ -48,6 +48,8 @@ namespace new_calculator
             this.btn0 = new System.Windows.Forms.Button();
             this.btnC = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.btnPlusMinus = new System.Windows.Forms.Button();
+            this.btnSamaDengan = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // mainDisplay
@@ -83,6 +85,7 @@ namespace new_calculator
             this.btn7.Text = "7";
             this.btn7.UseMnemonic = false;
             this.btn7.UseVisualStyleBackColor = true;
+            this.btn7.Click += new System.EventHandler(this.btnAngka_Click);
             // 
             // btn4
             // 
@@ -94,6 +97,7 @@ namespace new_calculator
             this.btn4.Text = "4";
             this.btn4.UseMnemonic = false;
             this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.Click += new System.EventHandler(this.btnAngka_Click);
             // 
             // btn1
             // 
@@ -105,6 +109,7 @@ namespace new_calculator
             this.btn1.Text = "1";
             this.btn1.UseMnemonic = false;
             this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.btnAngka_Click);
             // 
             // btn2
             // 
@@ -116,6 +121,7 @@ namespace new_calculator
             this.btn2.Text = "2";
             this.btn2.UseMnemonic = false;
             this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.btnAngka_Click);
             // 
             // btn5
             // 
@@ -127,6 +133,7 @@ namespace new_calculator
             this.btn5.Text = "5";
             this.btn5.UseMnemonic = false;
             this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.Click += new System.EventHandler(this.btnAngka_Click);
             // 
             // btn8
             // 
@@ -138,6 +145,7 @@ namespace new_calculator
             this.btn8.Text = "8";
             this.btn8.UseMnemonic = false;
             this.btn8.UseVisualStyleBackColor = true;
+            this.btn8.Click += new System.EventHandler(this.btnAngka_Click);
             // 
             // btn3
             // 
@@ -149,6 +157,7 @@ namespace new_calculator
             this.btn3.Text = "3";
             this.btn3.UseMnemonic = false;
             this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.btnAngka_Click);
             // 
             // btn6
             // 
@@ -160,6 +169,7 @@ namespace new_calculator
             this.btn6.Text = "6";
             this.btn6.UseMnemonic = false;
             this.btn6.UseVisualStyleBackColor = true;
+            this.btn6.Click += new System.EventHandler(this.btnAngka_Click);
             // 
             // btn9
             // 
@@ -171,45 +181,49 @@ namespace new_calculator
             this.btn9.Text = "9";
             this.btn9.UseMnemonic = false;
             this.btn9.UseVisualStyleBackColor = true;
-            this.btn9.Click += new System.EventHandler(this.btn9_Click);
+            this.btn9.Click += new System.EventHandler(this.btnAngka_Click);
             // 
             // btnKali
             // 
             this.btnKali.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKali.Location = new System.Drawing.Point(286, 341);
+            this.btnKali.Location = new System.Drawing.Point(286, 275);
             this.btnKali.Name = "btnKali";
+            this.btnKali.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnKali.Size = new System.Drawing.Size(59, 44);
             this.btnKali.TabIndex = 13;
             this.btnKali.Text = "x";
             this.btnKali.UseMnemonic = false;
             this.btnKali.UseVisualStyleBackColor = true;
+            this.btnKali.Click += new System.EventHandler(this.btnOperan_Click);
             // 
             // btnKurang
             // 
             this.btnKurang.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKurang.Location = new System.Drawing.Point(286, 275);
+            this.btnKurang.Location = new System.Drawing.Point(286, 209);
             this.btnKurang.Name = "btnKurang";
             this.btnKurang.Size = new System.Drawing.Size(59, 44);
             this.btnKurang.TabIndex = 12;
             this.btnKurang.Text = "-";
             this.btnKurang.UseMnemonic = false;
             this.btnKurang.UseVisualStyleBackColor = true;
+            this.btnKurang.Click += new System.EventHandler(this.btnOperan_Click);
             // 
             // btnTambah
             // 
             this.btnTambah.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTambah.Location = new System.Drawing.Point(286, 209);
+            this.btnTambah.Location = new System.Drawing.Point(286, 143);
             this.btnTambah.Name = "btnTambah";
             this.btnTambah.Size = new System.Drawing.Size(59, 44);
             this.btnTambah.TabIndex = 11;
             this.btnTambah.Text = "+";
             this.btnTambah.UseMnemonic = false;
             this.btnTambah.UseVisualStyleBackColor = true;
+            this.btnTambah.Click += new System.EventHandler(this.btnOperan_Click);
             // 
             // btnBagi
             // 
             this.btnBagi.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBagi.Location = new System.Drawing.Point(286, 406);
+            this.btnBagi.Location = new System.Drawing.Point(286, 341);
             this.btnBagi.Name = "btnBagi";
             this.btnBagi.Size = new System.Drawing.Size(59, 44);
             this.btnBagi.TabIndex = 17;
@@ -217,17 +231,19 @@ namespace new_calculator
             this.btnBagi.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btnBagi.UseMnemonic = false;
             this.btnBagi.UseVisualStyleBackColor = true;
+            this.btnBagi.Click += new System.EventHandler(this.btnOperan_Click);
             // 
             // btnKoma
             // 
             this.btnKoma.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKoma.Location = new System.Drawing.Point(202, 406);
+            this.btnKoma.Location = new System.Drawing.Point(202, 143);
             this.btnKoma.Name = "btnKoma";
             this.btnKoma.Size = new System.Drawing.Size(59, 44);
             this.btnKoma.TabIndex = 16;
             this.btnKoma.Text = ".";
             this.btnKoma.UseMnemonic = false;
             this.btnKoma.UseVisualStyleBackColor = true;
+            this.btnKoma.Click += new System.EventHandler(this.btnKoma_Click);
             // 
             // btn0
             // 
@@ -238,7 +254,6 @@ namespace new_calculator
             this.btn0.TabIndex = 15;
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = true;
-            this.btn0.Click += new System.EventHandler(this.button14_Click);
             // 
             // btnC
             // 
@@ -250,23 +265,51 @@ namespace new_calculator
             this.btnC.Text = "C";
             this.btnC.UseMnemonic = false;
             this.btnC.UseVisualStyleBackColor = true;
+            this.btnC.Click += new System.EventHandler(this.btnC_Click);
             // 
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(286, 143);
+            this.btnDelete.Location = new System.Drawing.Point(34, 143);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(59, 44);
             this.btnDelete.TabIndex = 18;
             this.btnDelete.Text = "Del";
             this.btnDelete.UseMnemonic = false;
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnPlusMinus
+            // 
+            this.btnPlusMinus.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlusMinus.Location = new System.Drawing.Point(118, 140);
+            this.btnPlusMinus.Name = "btnPlusMinus";
+            this.btnPlusMinus.Size = new System.Drawing.Size(59, 44);
+            this.btnPlusMinus.TabIndex = 19;
+            this.btnPlusMinus.Text = "+/-";
+            this.btnPlusMinus.UseMnemonic = false;
+            this.btnPlusMinus.UseVisualStyleBackColor = true;
+            this.btnPlusMinus.Click += new System.EventHandler(this.btnPlusMinus_Click);
+            // 
+            // btnSamaDengan
+            // 
+            this.btnSamaDengan.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSamaDengan.Location = new System.Drawing.Point(202, 406);
+            this.btnSamaDengan.Name = "btnSamaDengan";
+            this.btnSamaDengan.Size = new System.Drawing.Size(143, 44);
+            this.btnSamaDengan.TabIndex = 20;
+            this.btnSamaDengan.Text = "=";
+            this.btnSamaDengan.UseMnemonic = false;
+            this.btnSamaDengan.UseVisualStyleBackColor = true;
+            this.btnSamaDengan.Click += new System.EventHandler(this.btnOperan_Click);
             // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(378, 479);
+            this.Controls.Add(this.btnSamaDengan);
+            this.Controls.Add(this.btnPlusMinus);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnBagi);
             this.Controls.Add(this.btnKoma);
@@ -289,7 +332,7 @@ namespace new_calculator
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Calculator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Kalkulator Using Fucking C#";
             this.Load += new System.EventHandler(this.Calculator_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -317,6 +360,8 @@ namespace new_calculator
         private System.Windows.Forms.Button btn0;
         private System.Windows.Forms.Button btnC;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnPlusMinus;
+        private System.Windows.Forms.Button btnSamaDengan;
     }
 }
 
